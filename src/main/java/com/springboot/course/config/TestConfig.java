@@ -73,6 +73,7 @@ public class TestConfig implements CommandLineRunner{
 		product3.getCategories().add(category3);
 		product4.getCategories().add(category3);
 		product5.getCategories().add(category2);
+		
 		productRepository.saveAll(Arrays.asList(product1,product2,product3,product4,product5));
 		
 		OrderItem orderItem1 = new OrderItem(order1,product1,2,product1.getPrice());
